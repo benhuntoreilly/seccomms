@@ -1,0 +1,6 @@
+from pywinauto import *
+
+app = application.Application()
+app.start("C:/Program Files/Notepad++/notepad++.exe")
+dlg_spec = app.window()
+dlg_spec.move_window(x=None, y=None, width=50, height=50, repaint=True)
